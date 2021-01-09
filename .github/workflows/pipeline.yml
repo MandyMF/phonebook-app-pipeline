@@ -35,9 +35,9 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.8.8
         with: 
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "full-stack-open-pokedex-mmf"
+          heroku_app_name: "phonebook-app-part-11"
           heroku_email: "mandy@fonoma.com"
-          healthcheck: "https://phonebook-app-part-11.herokuapp.com//health"
+          healthcheck: "https://phonebook-app-part-11.herokuapp.com/health"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
       - uses: actions/checkout@v2  #I didn't get the error but added this anyway
