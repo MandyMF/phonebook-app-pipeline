@@ -1,0 +1,13 @@
+POST https://calm-castle-44023.herokuapp.com/api/persons
+Content-Type: application/json
+
+{
+    "name":"new Contact",
+    "number":"69696948484"
+}
+//{
+//    "name":"new Contact"
+//}
+//{
+//    "number":"69696948484"
+//}
