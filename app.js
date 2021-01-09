@@ -32,6 +32,15 @@ app.use(morgan(function (tokens, req, res) {
   ].join(' ')
 }))
 
+app.get('/health', (req, res) => {
+  res.send('ok')
+  console.log('dasdasdad')
+})
+
+app.get('/version', (req, res) => {
+  res.send('1') // change this string to ensure a new version deployed
+})
+
 app.get('/api/persons', (req, res) => {
   Person.find({}).then(result => {
     res.json(result)
