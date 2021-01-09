@@ -48,6 +48,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
+          INITIAL_VERSION: 0.0.1-beta.1
       #- name: Notification success
       #  if: ${{ github.event_name == 'push' && !contains( join( toJson(github.event.commits.*.message )), '#skip') && success() }}
       #  uses: 8398a7/action-slack@v3
